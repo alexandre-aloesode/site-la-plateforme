@@ -2,7 +2,7 @@
 body{
     font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
     margin: 0%;
-    background-color: #88C1D0;
+    background-color: white;
 }
 
 header{
@@ -61,6 +61,7 @@ footer a{
 
 .footer-top{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 3%;
     padding-bottom: 1%;
@@ -147,8 +148,9 @@ footer a{
 }
 
 .index1-txt button{
-    width: 52%;
-    height: 6%;
+    width: fit-content;
+    height: fit-content;
+    padding: 2%;
     background-color: #FF2063;
     color: white;
     font-size: 95%;
@@ -222,6 +224,13 @@ footer a{
     align-self: center;
     border: none;
     cursor: pointer;
+    display:flex;
+    align-items: center;
+    gap: 10px
+}
+
+.index2-box button i{
+    font-size: 50%; 
 }
 
 .index2-box button:hover{
@@ -278,6 +287,13 @@ footer a{
     align-self: center;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.index3 button i{
+    font-size: 50%; 
 }
 
 .index3 button:hover{
@@ -316,16 +332,28 @@ footer a{
 
 .who{
    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
-   margin-left: 20%;
-   margin-right: 20%;
+   background-color: white;
+   color:#7D7D7D;
+  
    display:flex;
    flex-direction: column;
 }
 
+.who h1{
+    color:black;
+}
+
+.who h2{
+    color:black;
+}
+
 .who-intro{
+    margin-left: 20%;
+    margin-right: 20%;
     display: flex;
     flex-wrap: wrap;
     gap: 30px 50px;
+    line-height: 30px;
 }
 
 .who-intro-title{
@@ -336,18 +364,23 @@ footer a{
 .who-intro1{
     display: flex;
     flex-wrap: wrap;
-    border: solid 1px black;
     width: 47%;
 }
 
 .who-intro2{
     display: flex;
     flex-wrap: wrap;
-    border: solid 1px red;
     width: 47%;
 }
 
+.who-intro a{
+    text-decoration: none;
+    color:#7D7D7D   
+}
+
 .who-partners{
+    margin-left: 20%;
+    margin-right: 20%;
     display: flex;
     flex-direction: column;
 }
@@ -364,9 +397,17 @@ footer a{
 }
 
 .who-certifs{
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #F6F6F6;
     display: flex;
     flex-wrap: wrap;
     gap: 30px 50px;
+}
+
+.who-certifs a{
+    text-decoration: none;
+    color:#7D7D7D;
 }
 
 .who-certifs-title{
@@ -376,18 +417,22 @@ footer a{
 
 .who-certifs-text1{
     width: 20%;
+    line-height: 30px;
 }
 
 .who-certifs-text2{
     width: 20%;
+    line-height: 30px;
 }
 
 .who-certifs-text3{
     width: 20%;
+    line-height: 30px;
 }
 
 .who-certifs-text4{
     width: 20%;
+    line-height: 30px;
 }
 
 .who-certifs img{
@@ -396,6 +441,8 @@ footer a{
 }
 
 .who-pres{
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 100px;
     display:flex;
     flex-wrap: wrap;
@@ -414,6 +461,10 @@ footer a{
     padding-bottom: 120px;
 }
 
+.who-pres-vid a{
+    text-decoration: none;
+    color:#7D7D7D;
+}
 
 .contact{
     color: #336699;
